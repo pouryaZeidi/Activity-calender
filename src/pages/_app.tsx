@@ -1,3 +1,5 @@
+import { ThemeProvider } from "@/components/ThemeProvider";
+import ThemeToggle from "@/components/ThemeToggle";
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import { Rubik } from "next/font/google";
@@ -14,7 +16,10 @@ export default function App({ Component, pageProps }: AppProps) {
       }
       `}
     </style>
+        <ThemeProvider>
+        <ThemeToggle/>
       <Component {...pageProps} />
+        </ThemeProvider>
     </>
   );
 }

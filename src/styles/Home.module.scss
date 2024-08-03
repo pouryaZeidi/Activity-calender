@@ -1,0 +1,30 @@
+.main {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px;
+  transition: background-color 0.5s ease, color 0.7s ease;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardsContainer{
+  padding:20px ;
+  width:1300px ;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+
+  }
+  .cardsline{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 10px;
+    
+  }
+.rightcards{
+  width: 80%;
+  
+}

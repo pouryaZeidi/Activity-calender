@@ -1,5 +1,8 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.scss";
+import Card from "@/components/Card";
+import UserCard from "@/components/UserCard";
+
 
 export default function Home() {
   return (
@@ -11,7 +14,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-
+      <div className={styles.container}>
+      <div className={styles.cardsContainer}>
+      <div className={styles.userCardContainer}>
+        <UserCard />
+      </div>
+      <div className={styles.rightcards}>
+        <div className={styles.cardsline}>
+        <Card src={"/job.svg"} colorClass={"job"} />
+        <Card src={"/fun.svg"} colorClass={"fun"} />
+        <Card src={"/learning.svg"} colorClass={"learning"} />
+        </div>
+        <div className={styles.cardsline}>
+        <Card src={"sport.svg"} colorClass={"sport"} />
+        <Card src={"emails.svg"} colorClass={"emails"} />
+        <Card src={"health.svg"} colorClass={"health"} />
+        </div>
+      </div>
+    </div>
+      </div>
       </main>
     </>
   );

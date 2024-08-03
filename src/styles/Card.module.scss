@@ -1,0 +1,79 @@
+@import './variable.module.scss';
+
+.cardContainer {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background: $light-red-learning;
+    border-radius: 20px;
+    
+}
+.Subjects{
+    width: 100%;
+    height: 80%;
+    background:var(--backgroundSubject-color);
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+    color:white; 
+}
+.suptitle{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.middleText{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 60px;
+
+}
+.subtitle{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.number{
+    font-size: 36px;
+    margin-right: 5px;
+}
+.titleicone{
+    position:absolute;
+    top: -1px;
+    right: 15px;
+    opacity: 0.5;
+    
+}
+.option{
+    font-size: 18px;
+    cursor: pointer;
+}
+.job{
+    background:$light-red-job;
+}
+
+.learning {
+    background: $light-red-learning;
+  }
+  
+  .fun {
+    background: $soft-blue-fun;
+  }
+  
+  .sport {
+    background: $lime-green-sport;
+  }
+  
+  .emails {
+    background: $violet-emails;
+  }
+  
+  .health {
+    background: $soft-orange-health;
+  }

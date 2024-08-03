@@ -1,0 +1,30 @@
+// @use './globals.scss' as global;
+@import './variable.module.scss';
+
+.toggleContainer{
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.themeIcon{
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  opacity: 1;
+  transition: .3s;
+  &:hover{
+    color:$soft-orange-health;
+   
+  }
+}
+
+.left{
+  transform: translateX(-10px);
+  opacity: 0;
+}
+.right{
+  opacity: 0;
+}
