@@ -2,9 +2,11 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.scss";
 import Card from "@/components/Card";
 import UserCard from "@/components/UserCard";
-
+import {timeframes} from '@/data/timeframes'
+import { useState } from "react";
 
 export default function Home() {
+  const [category,setCategory] = useState('daily')
   return (
     <>
       <Head>
@@ -17,18 +19,11 @@ export default function Home() {
       <div className={styles.container}>
       <div className={styles.cardsContainer}>
       <div className={styles.userCardContainer}>
-        <UserCard />
+        <UserCard setCategory={setCategory} />
       </div>
       <div className={styles.rightcards}>
         <div className={styles.cardsline}>
-        <Card src={"/job.svg"} colorClass={"job"} />
-        <Card src={"/fun.svg"} colorClass={"fun"} />
-        <Card src={"/learning.svg"} colorClass={"learning"} />
-        </div>
-        <div className={styles.cardsline}>
-        <Card src={"sport.svg"} colorClass={"sport"} />
-        <Card src={"emails.svg"} colorClass={"emails"} />
-        <Card src={"health.svg"} colorClass={"health"} />
+          {timeframes.map((item:any)=><Card data={item} category={category} key={item?.title} src={`/${item?.title}.svg`} colorClass={item?.title} />)}
         </div>
       </div>
     </div>

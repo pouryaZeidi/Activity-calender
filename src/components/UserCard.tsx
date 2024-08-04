@@ -2,7 +2,7 @@
 import React from 'react';
 import style from '@/styles/UserCard.module.scss';
 
-const UserCard = () => {
+const UserCard = ({setCategory}:{setCategory:any}) => {
   return (
     <div className={style.userContainer}>
         <div className={style.userDetail}>
@@ -17,9 +17,9 @@ const UserCard = () => {
               </div>
         </div>
             <div className={style.calender}>
-            <h3 className={style.calTxt}>Daily</h3>
-            <h3 className={style.calTxt}>Weekly</h3>
-            <h3 className={style.calTxt}>monthly</h3>
+            <h3 onClick={()=>setCategory('daily')} className={style.calTxt}>Daily</h3>
+            <h3 onClick={()=>setCategory('weekly')} className={style.calTxt}>Weekly</h3>
+            <h3 onClick={()=>setCategory('monthly')} className={style.calTxt}>Monthly</h3>
             </div>
             
     </div>
