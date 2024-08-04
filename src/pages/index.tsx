@@ -16,18 +16,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      <div className={styles.container}>
-      <div className={styles.cardsContainer}>
-      <div className={styles.userCardContainer}>
-        <UserCard setCategory={setCategory} />
-      </div>
-      <div className={styles.rightcards}>
-        <div className={styles.cardsline}>
-          {timeframes.map((item:any)=><Card data={item} category={category} key={item?.title} src={`/${item?.title}.svg`} colorClass={item?.title} />)}
+        <div className={styles.container}>
+          <div className={styles.userCardContainer}>
+            <UserCard setCategory={setCategory} />
+          </div>
+          <div className={styles.cardsContainer}>
+            {timeframes.map((item:any)=><Card data={item} category={category} key={item?.title} src={`/${item?.title}.svg`} colorClass={item?.title} />)}
+          </div>
         </div>
-      </div>
-    </div>
-      </div>
       </main>
     </>
   );

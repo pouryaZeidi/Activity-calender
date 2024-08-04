@@ -1,31 +1,43 @@
 .main {
   background-color: var(--background-color);
   color: var(--text-color);
-  padding: 10px;
-  transition: background-color 0.5s ease, color 0.7s ease;
-  padding: 40px;
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.container{
+  width: 100%;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.cardsContainer{
-  padding:20px ;
-  width:1300px ;
-  height: 500px;
+.userCardContainer{
+  width: 30%;
+  height: 85%;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: end;
+}
+.cardsContainer{
+  width: 70%;
+  display: flex;
+  height: 85%;
+  flex-wrap: wrap;
+  max-width: 1440px;
+}
+@media (max-width: 375px ) {
+  .container{
+    flex-direction: column;
+    // margin-top: 10px;
   }
-  .cardsline{
-    display: flex;
-    justify-content: space-between;
+  .userCardContainer{
     width: 100%;
-    margin: 5px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
+    height: 70%;
+  }
+  .cardsContainer{
+    width: 100%;
     
   }
-.rightcards{
-  width: 80%;
-  
+ 
 }
+

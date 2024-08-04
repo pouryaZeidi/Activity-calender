@@ -1,4 +1,5 @@
 @import './variable.module.scss';
+
 // global.scss
 
 // Layout
@@ -9,7 +10,7 @@ $desktop-width: 1440px;
 :root {
   --background-color: #{$color-background-light}; // Light theme background
   --backgroundSubject-color: #{$color-text-light}; // Dark theme background
-  --text-color: #{$color-text-light};             // Light theme text
+  --text-color: #{$color-text-light}; // Light theme text
 }
 
 /* Dark theme adjustments using CSS variables */
@@ -28,11 +29,3 @@ body {
 }
 
 // Media Queries for Layout
-@media (max-width: $mobile-width) {
-  /* Mobile-specific styles */
-}
-
-@media (min-width: $desktop-width) {
-  // Desktop-specific styles
-}
-

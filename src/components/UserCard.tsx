@@ -8,7 +8,7 @@ const UserCard = ({setCategory}:{setCategory:any}) => {
         <div className={style.userDetail}>
             <div className={style.user}>
               <img src="/avatar.png" alt="Profile" className={style.profileImage} />
-              <h3>Report for</h3>
+              <h3 className={style.report}>Report for</h3>
           
             </div>
               <div className={style.userName}>
